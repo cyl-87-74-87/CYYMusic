@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 播放中 的 打碟区域 自定义View 需要用到的 布局文件 -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark">
+
+    <!-- 整个光盘-->
+    <FrameLayout
+        android:id="@+id/Fl_playMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/discSize">
+
+        <!-- 黑圈圈 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/disc" />
+
+        <!-- 圆圈中间的圆形图片 -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/playMusicIconSize"
+            android:layout_height="@dimen/playMusicIconSize"
+            android:layout_gravity="center"
+            app:civ_border_color="@android:color/black"
+            app:civ_border_width="2dp" />
+
+        <!-- 最中间的 播放/暂停 图标 -->
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/play_music"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!-- 定义指针杆 -->
+    <ImageView
+        android:id="@+id/iv_needle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="25dp"
+        android:src="@mipmap/needle" />
+
+</FrameLayout>

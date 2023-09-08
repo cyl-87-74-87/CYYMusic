@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 首页 3网格 每一个item 的 布局 -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 为了以后扩展 -->
+    <data>
+
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 宽高相等的 自定义控件 -->
+        <com.xiangxue.puremusic.ui.view.WEqualHeightImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/albumMarginSize"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/playNumImgSize"
+                android:layout_height="@dimen/playNumImgSize"
+                android:src="@mipmap/play_num" />
+
+            <TextView
+                android:id="@+id/tv_playNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/albumMarginSize"
+                android:text="10.00万"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/TitleSize"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/albumMarginSize"
+        android:text="歌单名称"
+        android:textColor="@color/titleColor"
+        android:textSize="@dimen/TitleSize"
+        android:textStyle="bold" />
+</LinearLayout>
+</layout>

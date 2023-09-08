@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 播放音乐时指针的  停止播放 的 动画 -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:interpolator="@android:anim/linear_interpolator">
+
+    <!-- 保持在最后一帧 -->
+    <rotate
+        android:duration="@integer/play_needle_disc_anim_duration"
+        android:fromDegrees="0"
+        android:pivotX="0"
+        android:pivotY="0"
+        android:toDegrees="-20" />
+
+</set>

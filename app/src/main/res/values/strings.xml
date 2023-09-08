@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">CYLMusic</string>
+    <string name="welcome_back">欢迎回来</string>
+
+    <!-- 歌曲列表的Json数据模拟 -->
+    <string name="free_music_json">
+        "{\"albumId\":\"001\",\"title\":\"海阔天空\",\"summary\":\"BenSound\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-a1707fe9d2881bad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"musics\":[{\"musicId\":\"001\",\"title\":\"真的爱你\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-f14157a593105b44.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"url\":\"http://res.lgdsunday.club/Nostalgic%20Piano.mp3\"},{\"musicId\":\"002\",\"title\":\"喜欢你\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-7d63853a942a9fca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"url\":\"bensound-sunny.mp3\"},{\"musicId\":\"003\",\"title\":\"无尽空虚\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-cc98fb028ce6d0d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"url\":\"http://res.lgdsunday.club/La%20Citadelle.mp3\"},{\"musicId\":\"004\",\"title\":\"报答一生\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-373738fd8348d00c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"url\":\"http://res.lgdsunday.club/Champ%20de%20tournesol.mp3\"},{\"musicId\":\"005\",\"title\":\"情人\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-9fdaa9fac9c64706.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"url\":\"http://res.lgdsunday.club/Horizon%20Flare.mp3\"},{\"musicId\":\"006\",\"title\":\"遥望\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-f9551901c204796c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"url\":\"http://res.lgdsunday.club/Lovely%20Piano%20Song.mp3\"},{\"musicId\":\"007\",\"title\":\"光辉岁月\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-34badd275cb94505.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"url\":\"http://res.lgdsunday.club/Romantic%20Inspiration.mp3\"},{\"musicId\":\"008\",\"title\":\"爸爸妈妈\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-bc552cfff3d62f95.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"url\":\"http://res.lgdsunday.club/Brothers%20Unite.mp3\"},{\"musicId\":\"009\",\"title\":\"再见理想\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-3f748a6d6a75278b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"url\":\"http://res.lgdsunday.club/Amazing%20Grace.mp3\"},{\"musicId\":\"010\",\"title\":\"永远等待\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-5a8cf444d54ac1d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"url\":\"http://res.lgdsunday.club/Nostalgic%20Piano.mp3\"},{\"musicId\":\"011\",\"title\":\"大地\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-40f102430a2f9a17.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"url\":\"http://res.lgdsunday.club/La%20Citadelle.mp3\"},{\"musicId\":\"012\",\"title\":\"秘密警察\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-bcb587272c75292b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"url\":\"http://res.lgdsunday.club/Champ%20de%20tournesol.mp3\"},{\"musicId\":\"013\",\"title\":\"长城\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-a5b298dbe4c5418f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"url\":\"http://res.lgdsunday.club/Horizon%20Flare.mp3\"},{\"musicId\":\"014\",\"title\":\"原谅我今天\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-7b9e31b81ef8fa70.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"url\":\"http://res.lgdsunday.club/Lovely%20Piano%20Song.mp3\"},{\"musicId\":\"015\",\"title\":\"谁伴我闯荡\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-46107b02764cf5ac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"url\":\"http://res.lgdsunday.club/Romantic%20Inspiration.mp3\"},{\"musicId\":\"016\",\"title\":\"不再犹豫\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-ce5a8c81b6b34217.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"url\":\"http://res.lgdsunday.club/Brothers%20Unite.mp3\"},{\"musicId\":\"017\",\"title\":\"冷雨夜\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-c8dd8e288b9508c9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"url\":\"http://res.lgdsunday.club/Amazing%20Grace.mp3\"},{\"musicId\":\"018\",\"title\":\"灰色轨迹\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-f7f0fec10cbd2ffb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"url\":\"bensound-sunny.mp3\"},{\"musicId\":\"019\",\"title\":\"农民\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-8a9078afb70d685a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"url\":\"bensound-sunny.mp3\"},{\"musicId\":\"020\",\"title\":\"不可一世\",\"artist\":{\"name\":\"cyl最佩服最喜欢的大爱无边的励志向上音乐\"},\"coverImg\":\"https://upload-images.jianshu.io/upload_images/27389471-4afaddc1da83c782.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\",\"url\":\"bensound-sunny.mp3\"}]}"
+    </string>
+    <string name="albumMusic_json">
+        "[{\"name\":\"cyy\",\"playNum\":\"500万\",\"poster\":\"https://upload-images.jianshu.io/upload_images/27389471-cc98fb028ce6d0d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\"},{\"name\":\"zyy\",\"playNum\":\"1690万\",\"poster\":\"https://upload-images.jianshu.io/upload_images/27389471-7b9e31b81ef8fa70.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\"},{\"name\":\"陈少\",\"playNum\":\"4030万\",\"poster\":\"https://upload-images.jianshu.io/upload_images/27389471-3f748a6d6a75278b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\"},{\"name\":\"钟少\",\"playNum\":\"1.5亿\",\"poster\":\"https://upload-images.jianshu.io/upload_images/27389471-5a8cf444d54ac1d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\"},{\"name\":\"iyy\",\"playNum\":\"6000万\",\"poster\":\"https://upload-images.jianshu.io/upload_images/27389471-40f102430a2f9a17.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\"},{\"name\":\"周慧敏\",\"playNum\":\"1060万\",\"poster\":\"https://upload-images.jianshu.io/upload_images/27389471-bcb587272c75292b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\"}]"
+    </string>
+    <!-- 左侧 半边界面 需要的文字集 -->
+    <string name="library_json">
+        "[{\"title\":\"Lifecycle\",\"summary\":\"主要用于在软件工程的背景下，解决生命周期管理的一致性问题\",\"url\":\"https://xiaozhuanlan.com/topic/3684721950\"},{\"title\":\"LiveData\",\"summary\":\"主要用于 配合唯一可信源 完成 生命周期安全的 事件统一分发，以避免收到 不可预期的推送 和 难以追溯的事件源\",\"url\":\"https://xiaozhuanlan.com/topic/0168753249\"},{\"title\":\"ViewModel\",\"summary\":\"主要用于 托管页面状态、分治视图控制器重建时的状态恢复，以及实现 生命周期安全的、事件源可追溯的 跨页面通信\",\"url\":\"https://xiaozhuanlan.com/topic/6257931840\"},{\"title\":\"DataBinding\",\"summary\":\"主要用于在软件工程的背景下，解决视图调用的一致性问题\",\"url\":\"https://xiaozhuanlan.com/topic/9816742350\"},{\"title\":\"Navigation\",\"summary\":\"通过声明式编程来解决 应用内路由导航 的一致性问题\",\"url\":\"https://xiaozhuanlan.com/topic/5860149732\"}]"
+    </string>
+
+    <string name="play">播放</string>
+    <string name="notify_of_play">播放时的通知栏展示</string>
+    <string name="network_unconnected">网络断开了</string>
+
+    <string name="play_repeat">列表循环</string>
+    <string name="play_repeat_once">单曲循环</string>
+    <string name="play_shuffle">随机播放</string>
+
+    <string name="unfinished">最近播放细节没有搞</string>
+    <string name="recently">我的歌曲</string>
+    <string name="best_practice">其他信息</string>
+
+
+    <string name="app_summary">cyl项目</string>
+    <string name="project_title">本项目中用到的技术点包括：</string>
+    <string name="Copyright">Product with love cyl @2023</string>
+    <string name="search_page_tip">本页面用于测试 Navigation 路由导航</string>
+    <string name="test_download">测试下载，返回页面仍有效</string>
+    <string name="test_lifecycle_download">测试下载，离开页面即中止</string>
+    <string name="search_back">右滑关闭本页面</string>
+
+    <string name="relearn_android">《我的笔记》</string>
+    <string name="learn_more_friends">JetPack笔记</string>
+    <string name="learn_more">Learn More</string>
+    //
+    <string name="play_list">专辑分类</string>
+    <string name="super_music">精品音乐</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

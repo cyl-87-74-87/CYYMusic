@@ -1,0 +1,57 @@
+目前来说Jetpack的一系列架构组件，代表了，我们后续的Android开发者一定是（“标准化开发模式”）
+以后安卓原生开发的架构模式，MVVM + JetPack全家桶 + Kotlin = “Google标准化开发模式”
+
+使用了Jetpack的一系列架构组件，50%容错处理（JetPack+Kotlin）
+
+简历：专业技能
+研究过Jetpack的一系列架构组件
+
+面试，写了Jetpack的一系列架构组件，到底属于你采用了什么样子的框架模式？
+答：我们这里使用了，Google提供的JetPack架构组件库，实现了 ”标准状态管理框架“
+
+TODO Lifecycle
+既然提到了，状态管理，就不得不说，Lifecycle：（生命周期管理，保持一致性）
+1.解决了 一致性问题（人类写错的东西，无法避免）（Code）
+2.业务逻辑代码入侵，处理掉了
+3.我们不需要去依赖到 某个Activity，避免了后续的问题(扩展性更强，减低耦合)
+
+TODO LiveData
+状态的变化, 以前我们都是使用接口回调来完成，使用EventBus来完成，这种是属于状态的分发（场景：网络请求回调，跨页面同学的情况 等等）
+1.隐士 LiveData（被Lifecycle劫持住）和生命周期绑定的状态分发
+2.setValue(true); 触发改变    observe() 观察触发改变  非常的明确， 唯一可信源 （承上启下地完成 状态 从 唯一可信源 到 视图控制器 的输送）
+  扩展的功能： 一个触发，多个观察改变
+3.解决难以追溯、难以排查、不可预期 的问题，可追逐性很强。
+4.有一个坑，数据粘性，LiveDataBus
+   什么时候用黏性：如果是先触发setValue， 后观察observe，就用人家的黏性
+   如果没有上述要求，尽量剔除黏性，防止出现bug
+
+TODO ViewModel（小弟 ObservableField，LiveData）
+解决 状态管理 和 页面通信（共享ViewModel） 的问题
+1.Activity被重建（横屏切换）保存在VM里面的数据 【保证 字段的 数据 的稳定性】
+2.SharedViewModel 共享
+3.什么周期 很长的，覆盖了 宿主的所有环境 （ViewModel源码 那节课）
+4.（解耦）分担Activity/Fragment责任，（UI Model）-->VM
+
+TODO DataBinding
+解决试图的 一致性问题，@BindinAdapter
+<TextView 前面讲的DataBinding黑锅事件
+   android:text="{逻辑，逻辑，逻辑逻辑逻辑逻辑逻辑逻辑逻辑逻辑逻辑}
+1.可以完成双向绑定
+2.代码全部都是在编译期完成的，APT生成代码（layout 2 tag ），DataBinding还是会耗费性能的
+3.如果编译不通过，BindingImplxxx，布局写错误
+4.如果用不到 单向绑定，双向绑定，尽量用 ViewBinding
+
+ViewBinding轻量级的 as 3.6  出来的
+DataBinding重量级的 编译很慢，耗费性能的问题
+
+TODO Navigation
+一般情况下，一个Activity 多个 Fragment 基本上会用 Navigation
+全部 大部分 都是 Activity，建议不用 Navigation
+
+TODO
+JetPack标准图：这个viewmodel是MVVM的VM层
+
+JetPack组件库的 ViewModel()，只是一个组件库而已，和 MVVM的VM层 没有直接关系，ViewModel()就是一个库而已
+
+这和presenter  p 层有什么区别？
+MainPresenter : ViewModel()

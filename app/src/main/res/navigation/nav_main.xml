@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 首页的navigation，搜索界面的navigation -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mainFragment">
+
+    <!-- 首页界面，不包含播放条 -->
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.xiangxue.puremusic.ui.page.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+
+        <!--
+        跳转到 “测试搜索界面
+        app:destination="@id/searchFragment"
+        -->
+        <action
+            android:id="@+id/action_mainFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:enterAnim="@anim/h_fragment_enter"
+            app:exitAnim="@anim/h_fragment_exit"
+            app:popEnterAnim="@anim/h_fragment_pop_enter"
+            app:popExitAnim="@anim/h_fragment_pop_exit" />
+        <action
+            android:id="@+id/action_mainFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:enterAnim="@anim/h_fragment_enter"
+            app:exitAnim="@anim/h_fragment_exit"
+            app:popEnterAnim="@anim/h_fragment_pop_enter"
+            app:popExitAnim="@anim/h_fragment_pop_exit" />
+
+    </fragment>
+
+    <!-- “搜索界面 -->
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.xiangxue.puremusic.ui.page.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search">
+
+    </fragment>
+     <!--列表界面-->
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.xiangxue.puremusic.ui.page.ListFragment"
+        android:label="ListFragment"
+        tools:layout="@layout/fragment_list"/>
+
+</navigation>

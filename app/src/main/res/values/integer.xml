@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Activity之间切换的动画的时长 x毫秒 -->
+    <integer name="anim_duration">800</integer>
+    <integer name="play_music_disc_anim_duration">10000</integer>
+    <integer name="play_needle_disc_anim_duration">600</integer>
+</resources>

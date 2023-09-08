@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="sliding_up_header">55dp</dimen>
+    <dimen name="sliding_up_header_land">200dp</dimen>
+
+    <!-- 默认的字体大小 -->
+    <dimen name="default_text_size">12sp</dimen>
+    <dimen name="title_bar_height">48.0dp</dimen>
+    <dimen name="title_main_text_size">18sp</dimen>
+
+    <!-- 比默认字体大小大一号 -->
+    <dimen name="text_size_oversize">13sp</dimen>
+
+    <!--
+    布局文件里面   @+id   ids  @id
+                    12sp  dimens.xml
+                    String
+    -->
+
+    <dimen name="ts1">10.0sp</dimen>
+    <dimen name="ts2">11.0sp</dimen>
+    <dimen name="ts3">12.0sp</dimen>
+    <dimen name="ts4">13.0sp</dimen>
+    <dimen name="ts5">14.0sp</dimen>
+    <dimen name="ts6">15.0sp</dimen>
+    <dimen name="ts7">16.0sp</dimen>
+    <dimen name="ts8">17.0sp</dimen>
+    <dimen name="ts9">18.0sp</dimen>
+    <dimen name="ts10">22.0sp</dimen>
+
+    //new
+    <dimen name="marginSize">16dp</dimen>
+    <dimen name="navBarHeight">56dp</dimen>
+    <dimen name="navBarTitleSize">22sp</dimen>
+    <dimen name="TitleSize">18sp</dimen>
+    <dimen name="inputViewHeight">44dp</dimen>
+    <dimen name="btnHeight">44dp</dimen>
+    <dimen name="infoSize">14sp</dimen>
+    <dimen name="radius">18dp</dimen>
+    <dimen name="itemHeight">44dp</dimen>
+    <dimen name="marginTabSize">4dp</dimen>
+    <dimen name="albumMarginSize">4dp</dimen>
+    <dimen name="playNumImgSize">18dp</dimen>
+
+    <dimen name="itemIconSize">56dp</dimen>
+    <dimen name="MusicPlaySize">36dp</dimen>
+
+    <dimen name="discSize">90dp</dimen>
+    <dimen name="playMusicIconSize">210dp</dimen>
+
+</resources>

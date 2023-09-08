@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 先写布局，后又DataBinding -->
+<!-- MainActivity 的布局，我只管 nav -->
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto">
+
+    <!-- 数据区域 -->
+    <data>
+        <!-- 考虑到后面 横竖屏切换 数据不丢失 -->
+        <variable
+            name="vm"
+            type="com.xiangxue.puremusic.bridge.state.MainActivityViewModel" />
+    </data>
+
+    <!-- 抽屉控件  左右滑动， DrawerLayout只支持左右滑动的菜单，但是并不支持上下滑动的菜单
+         allowDrawerOpen="@{vm.allowDrawerOpen}" 允许抽屉打开 与 关闭
+         isOpenDrawer="@{vm.openDrawer}" 打开抽屉 与 关闭抽屉
+     -->
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/dl"
+        allowDrawerOpen="@{vm.allowDrawerOpen}"
+        isOpenDrawer="@{vm.openDrawer}"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 这是正面的
+            唯一的遗憾是DrawerLayout只支持左右滑动的菜单，但是并不支持上下滑动的菜单，
+            我们今天要介绍的SlidingUpPanelLayout，相当于竖向的DrawerLayout
+            https://www.jianshu.com/p/b6fb08a5b604
+
+            2016发布，很稳定， 弹上来 掉下去
+            向上滑动面板布局
+         -->
+        <com.sothree.slidinguppanel.SlidingUpPanelLayout
+            android:id="@+id/sliding_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            sothree:umanoDragView="@+id/slide_fragment_host"
+            sothree:umanoOverlay="false"
+            sothree:umanoPanelHeight="@dimen/sliding_up_header"
+            sothree:umanoShadowHeight="5dp">
+
+            <!-- 主页效果的fragment显示
+                 就是 main 的效果，当点击 main 上面的 菜单图标的时候  跳转到 “测试搜索界面”
+                 nav_main(首页界面，搜索界面)
+             -->
+            <fragment
+                android:id="@+id/main_fragment_host"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/nav_main" />
+
+            <!-- 底部播放条 底部播放项，非常的重要
+                 nav_slide（播放条播放界面）
+             -->
+            <fragment
+                android:id="@+id/slide_fragment_host"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/nav_slide" />
+
+        </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+        <!-- 点击菜单图标后，弹出左侧的 "黑色半边框界面"
+             nav_drawer（左侧的 黑色半边框界面）
+         -->
+        <fragment
+            android:id="@+id/drawer_fragment_host"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_drawer" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</layout>

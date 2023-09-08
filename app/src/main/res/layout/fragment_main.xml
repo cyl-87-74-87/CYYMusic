@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 首页Fragment 布局 -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <!-- 点击事件 -->
+        <variable
+            name="click"
+            type="com.xiangxue.puremusic.ui.page.MainFragment.ClickProxy" />
+
+        <variable
+            name="vm"
+            type="com.xiangxue.puremusic.bridge.state.MainViewModel" />
+
+    </data>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+          <!--  <include layout="@layout/nav_bar" />-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/toolbar"
+                drawable_radius="@{8}"
+                drawable_solidColor="@{0x88ffffff}"
+                drawable_strokeColor="@{0x33666666}"
+                drawable_strokeWidth="@{1}"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="37dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_menu"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="12dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:onClick="@{()->click.openMenu()}"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_menu_black_48dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_icon"
+                    onClickWithDebouncing="@{()->click.search()}"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_music_note_black_48dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/tv_app"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_app"
+                    onClickWithDebouncing="@{()->click.search()}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/my_c2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_search"
+                    onClickWithDebouncing="@{()->click.search()}"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_search_black_48dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.xiangxue.puremusic.ui.view.NestedScrollLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- ScrollView 必须要有一个 孩子 例如：LinearLayout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!-- 下面是 专辑分类 区域 start -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginSize"
+                        android:layout_marginTop="@dimen/marginSize"
+                        android:layout_marginBottom="@dimen/marginSize"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="22dp"
+                            android:background="@color/mainColor" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/marginTabSize"
+                            android:text="@string/play_list"
+                            android:textColor="@color/titleColor"
+                            android:textSize="@dimen/TitleSize"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_grid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                        <!-- 下面是 精品音乐 区域 start -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="4dp"
+                                android:layout_height="22dp"
+                                android:background="@color/mainColor" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/marginTabSize"
+                                android:text="@string/super_music"
+                                android:textColor="@color/titleColor"
+                                android:textSize="@dimen/TitleSize"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <!-- ================================================================================== -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tab_layout"
+                            initTabAndPage="@{vm.initTabAndPage}"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:fitsSystemWindows="true"
+                        app:tabBackground="@color/my_c1"
+                        app:tabIndicatorColor="@color/gray"
+                        app:tabSelectedTextColor="@color/gray"
+                        app:tabTextColor="@color/light_gray">
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/recently" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/best_practice" />
+
+                    </com.google.android.material.tabs.TabLayout>
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/view_pager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:overScrollMode="never"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipToPadding="false"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/adapter_play_item"
+                        android:visibility="visible" />
+
+                            <!-- 2.“其他信息区域” 其实就是 WebView展示网页信息而已 -->
+                            <androidx.core.widget.NestedScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <WebView
+                                    android:id="@+id/web_view"
+                                    pageAssetPath="@{vm.pageAssetPath}"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clipToPadding="false"
+                                    android:visibility="visible"
+                                    android:background="#B4D9DD"
+                                    />
+
+                            </androidx.core.widget.NestedScrollView>
+
+                        </androidx.viewpager.widget.ViewPager>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.xiangxue.puremusic.ui.view.NestedScrollLayout>
+
+        </LinearLayout>
+
+</layout>

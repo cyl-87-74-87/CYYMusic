@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 播放音乐时指针的  播放音乐 的 动画 -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/linear_interpolator">
+
+    <rotate
+        android:duration="@integer/play_needle_disc_anim_duration"
+        android:fromDegrees="-20"
+        android:pivotX="0"
+        android:pivotY="0"
+        android:toDegrees="0" />
+
+</set>
