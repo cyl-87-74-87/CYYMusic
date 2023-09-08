@@ -7,12 +7,12 @@
         <!-- 同学们，这里是ViewModel的绑定操作 -->
         <variable
             name="vm"
-            type="com.xiangxue.puremusic.bridge.state.LoginViewModel" />
+            type="com.cyymusic.puremusic.bridge.state.LoginViewModel" />
 
         <!-- 同学们，这里是此布局的点击事件集 -->
         <variable
             name="click"
-            type="com.xiangxue.puremusic.LoginActivity.ClickClass" />
+            type="com.cyymusic.puremusic.LoginActivity.ClickClass" />
 
     </data>
 

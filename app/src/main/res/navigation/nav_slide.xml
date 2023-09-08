@@ -9,7 +9,7 @@
 
     <fragment
         android:id="@+id/playerFragment"
-        android:name="com.xiangxue.puremusic.ui.page.PlayerFragment"
+        android:name="com.cyymusic.puremusic.ui.page.PlayerFragment"
         android:label="fragment_player"
         tools:layout="@layout/fragment_player" />
 

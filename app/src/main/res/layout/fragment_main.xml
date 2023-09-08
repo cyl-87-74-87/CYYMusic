@@ -10,11 +10,11 @@
         <!-- 点击事件 -->
         <variable
             name="click"
-            type="com.xiangxue.puremusic.ui.page.MainFragment.ClickProxy" />
+            type="com.cyymusic.puremusic.ui.page.MainFragment.ClickProxy" />
 
         <variable
             name="vm"
-            type="com.xiangxue.puremusic.bridge.state.MainViewModel" />
+            type="com.cyymusic.puremusic.bridge.state.MainViewModel" />
 
     </data>
         <LinearLayout
@@ -90,7 +90,7 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <com.xiangxue.puremusic.ui.view.NestedScrollLayout
+            <com.cyymusic.puremusic.ui.view.NestedScrollLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -228,7 +228,7 @@
 
                 </LinearLayout>
 
-            </com.xiangxue.puremusic.ui.view.NestedScrollLayout>
+            </com.cyymusic.puremusic.ui.view.NestedScrollLayout>
 
         </LinearLayout>
 

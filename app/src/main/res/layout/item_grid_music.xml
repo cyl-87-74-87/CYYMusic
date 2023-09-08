@@ -19,7 +19,7 @@
         android:layout_height="wrap_content">
 
         <!-- 宽高相等的 自定义控件 -->
-        <com.xiangxue.puremusic.ui.view.WEqualHeightImageView
+        <com.cyymusic.puremusic.ui.view.WEqualHeightImageView
             android:id="@+id/iv_icon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

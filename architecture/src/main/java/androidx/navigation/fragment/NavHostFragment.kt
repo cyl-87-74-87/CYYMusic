@@ -11,7 +11,7 @@ import androidx.annotation.NavigationRes
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentContainerView
 import androidx.navigation.*
-import com.xiangxue.architecture.R
+import com.cyymusic.architecture.R
 
 /** 本来是Java的 Derry翻译成Kotlin的
  * NavHostFragment provides an area within your layout for self-contained navigation to occur.

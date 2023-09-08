@@ -6,7 +6,7 @@
     <data>
         <variable
             name="info"
-            type="com.xiangxue.puremusic.bridge.data.bean.LibraryInfo" />
+            type="com.cyymusic.puremusic.bridge.data.bean.LibraryInfo" />
 
     </data>
 

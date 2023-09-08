@@ -11,17 +11,17 @@
         <!-- 当我们点击的时候，我们要触发 -->
         <variable
             name="click"
-            type="com.xiangxue.puremusic.ui.page.PlayerFragment.ClickProxy" />
+            type="com.cyymusic.puremusic.ui.page.PlayerFragment.ClickProxy" />
 
         <!-- 专门更新 拖动条进度相关的 -->
         <variable
             name="event"
-            type="com.xiangxue.puremusic.ui.page.PlayerFragment.EventHandler" />
+            type="com.cyymusic.puremusic.ui.page.PlayerFragment.EventHandler" />
 
         <!-- 底部播放条的ViewModel -->
         <variable
             name="vm"
-            type="com.xiangxue.puremusic.bridge.state.PlayerViewModel" />
+            type="com.cyymusic.puremusic.bridge.state.PlayerViewModel" />
 
     </data>
 
@@ -39,7 +39,7 @@
             />-->
 
         <!-- 看起来是 “播放条” 实际上 责任很大，非常重要，管控了整个 -->
-        <com.xiangxue.puremusic.ui.view.ForegroundImageView
+        <com.cyymusic.puremusic.ui.view.ForegroundImageView
             android:id="@+id/album_art1"
             imageUrl="@{vm.coverImg}"
             placeHolder="@{vm.placeHolder}"
@@ -49,7 +49,7 @@
             android:src="@drawable/bg_album_default"
             android:visibility="visible"
             />
-        <com.xiangxue.puremusic.ui.view.PlayMusicView
+        <com.cyymusic.puremusic.ui.view.PlayMusicView
             android:id="@+id/album_art"
             android:layout_width="55dp"
             android:layout_height="55dp"
@@ -103,7 +103,7 @@
         </RelativeLayout>
 
         <!-- 歌词控件 -->
-        <com.xiangxue.puremusic.ui.view.LyricView
+        <com.cyymusic.puremusic.ui.view.LyricView
             android:id="@+id/lyric_view"
             android:layout_width="match_parent"
             android:layout_height="32dp"
@@ -180,7 +180,7 @@
                 app:materialIconColor="@android:color/black"
                 app:materialIconSize="28dp" />
 
-            <com.xiangxue.puremusic.ui.view.PlayPauseView
+            <com.cyymusic.puremusic.ui.view.PlayPauseView
                 android:id="@+id/play_pause"
                 isPlaying="@{vm.isPlaying}"
                 android:layout_width="36dp"

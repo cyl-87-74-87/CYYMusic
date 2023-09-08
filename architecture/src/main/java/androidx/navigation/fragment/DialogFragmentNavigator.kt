@@ -12,7 +12,7 @@ import androidx.lifecycle.LifecycleEventObserver
 import androidx.navigation.*
 import androidx.navigation.NavDestination.ClassType
 import androidx.navigation.fragment.DialogFragmentNavigator.Destination
-import com.xiangxue.architecture.R
+import com.cyymusic.architecture.R
 
 /** 本来是Java的 Derry翻译成Kotlin的
  * Navigator that uses [DialogFragment.show]. Every

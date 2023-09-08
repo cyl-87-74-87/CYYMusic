@@ -7,11 +7,11 @@
     <data>
         <variable
             name="click"
-            type="com.xiangxue.puremusic.ui.page.SearchFragment.ClickProxy" />
+            type="com.cyymusic.puremusic.ui.page.SearchFragment.ClickProxy" />
 
         <variable
             name="vm"
-            type="com.xiangxue.puremusic.bridge.state.SearchViewModel" />
+            type="com.cyymusic.puremusic.bridge.state.SearchViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

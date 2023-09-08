@@ -7,11 +7,11 @@
     <data>
         <variable
             name="vm"
-            type="com.xiangxue.puremusic.bridge.state.DrawerViewModel" />
+            type="com.cyymusic.puremusic.bridge.state.DrawerViewModel" />
 
         <variable
             name="click"
-            type="com.xiangxue.puremusic.ui.page.DrawerFragment.ClickProxy" />
+            type="com.cyymusic.puremusic.ui.page.DrawerFragment.ClickProxy" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -15,7 +15,7 @@ import androidx.navigation.NavOptions
 import androidx.navigation.Navigator
 import androidx.navigation.NavigatorProvider
 import androidx.navigation.fragment.FragmentNavigator.Destination
-import com.xiangxue.architecture.R
+import com.cyymusic.architecture.R
 import java.util.*
 
 /** 本来是Java的 Derry翻译成Kotlin的
