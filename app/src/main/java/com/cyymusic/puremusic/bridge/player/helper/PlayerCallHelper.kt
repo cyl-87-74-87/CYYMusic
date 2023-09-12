@@ -27,7 +27,7 @@ class PlayerCallHelper(private val mPlayerCallHelperListener: PlayerCallHelperLi
     private var mIsTempPauseByPhone = false // 是通过电话临时暂停
     private var tempPause = false // 暂停标记
 
-    // 同学们，这里是绑定调用监听器
+    // 这里是绑定调用监听器
     fun bindCallListener(context: Context) {
         phoneStateListener = object : PhoneStateListener() {
             override fun onCallStateChanged(state: Int, incomingNumber: String) {
@@ -83,7 +83,7 @@ class PlayerCallHelper(private val mPlayerCallHelperListener: PlayerCallHelperLi
         }
     }
 
-    // 同学们，这里是解除绑定调用监听器
+    // 这里是解除绑定调用监听器
     fun unbindCallListener(context: Context) {
         try {
             val mgr = context.getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager

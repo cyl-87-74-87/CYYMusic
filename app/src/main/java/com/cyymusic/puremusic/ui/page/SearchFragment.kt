@@ -82,7 +82,7 @@ class SearchFragment  : BaseFragment(){
 
     inner class ClickProxy {
 
-        private val PATH2 = "http://www.xiangxueketang.cn/" // 网页
+        private val PATH2 = "https://github.com/cyl-87-74-87/CYYMusic.git/" // 网页
 
         // 跳转 加载一个网页
         fun testNav()  = startPATH()

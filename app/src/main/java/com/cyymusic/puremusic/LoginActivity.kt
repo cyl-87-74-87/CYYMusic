@@ -20,6 +20,7 @@ class LoginActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //正式运行删掉
         startActivity(Intent(this@LoginActivity,  MainActivity::class.java))
         hideActionBar()
 
